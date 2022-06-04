@@ -1,0 +1,18 @@
+package class_and_obj;
+
+import java.util.ArrayList;
+
+public class TreeNode<T> {
+	public T data;
+	public ArrayList<TreeNoede<T>> children;
+
+	
+	public TreeNode(T data){
+		
+		this.data=data;
+		children=new ArrayList<>();
+		
+		
+	}
+
+}

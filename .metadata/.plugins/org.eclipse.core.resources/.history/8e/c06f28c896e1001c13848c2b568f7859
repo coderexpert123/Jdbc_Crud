@@ -1,0 +1,30 @@
+package class_and_obj;
+
+public class Student {
+	
+public	String name;
+private	int RollNumber;
+
+//create constructor
+public Student(String n,int rm) {
+	name=n;
+	RollNumber=rm;
+	
+}
+public void setRollNumber(int rn) {
+	RollNumber=rn;
+	
+}
+
+public int getRollNumber() {
+	
+	
+	return RollNumber;
+	
+}
+
+//print
+public void print() {
+	System.out.println(name+": "+RollNumber+": ");
+}
+}

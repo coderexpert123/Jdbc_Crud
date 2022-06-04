@@ -1,0 +1,25 @@
+package class_and_obj;
+
+import java.util.Scanner;
+
+public class R1 {
+
+	//recusrsion fnction
+	public static int recu(int n) {
+		
+		int ans=recu(n-1);
+		
+		return n*ans;
+		
+	}
+	
+	//main method
+	public static void main(String[] args) {
+		
+		Scanner s=new Scanner(System.in);
+		int number=s.nextInt();
+		System.out.println(recu(number));
+		
+		
+	}
+}

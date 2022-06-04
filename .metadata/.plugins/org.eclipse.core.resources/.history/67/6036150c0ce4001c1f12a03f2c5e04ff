@@ -1,0 +1,62 @@
+package sms.student;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+public class studentdao {
+	
+	
+public static boolean insertStudentTodb(Student st) {
+	// TODO Auto-generated method stub
+	boolean f=false;
+	
+	try {
+		Connection con=cp.cretec();
+		String q = "insert into students(sname,sphone,scity) values(?,?,?)";
+	 
+		
+		PreparedStatement ptmt=con.prepareStatement(q);
+		ptmt.setString(1, st.getStudenntname());
+		ptmt.setString(2, st.getStudentphone());
+		ptmt.setString(3, st.getStudentcity());
+		ptmt.executeUpdate();
+		f=true;
+		
+		
+		
+		
+	} catch (Exception e) {
+		// TODO: handle exception
+		e.printStackTrace();
+	}
+	return f;
+	
+}
+
+public static boolean deletestudent(int userId) {
+	// TODO Auto-generated method stub
+	
+boolean f=false;
+	
+	try {
+		Connection con=cp.cretec();
+		String q = "delete from students where sid=?";
+		 
+		
+		PreparedStatement ptmt=con.prepareStatement(q);
+		ptmt.setInt(1, userId);
+ 
+		ptmt.executeUpdate();
+		f=true;
+		
+	} catch (Exception e) {
+		// TODO: handle exception
+		e.printStackTrace();
+	}
+	return f;
+	
+	
+	
+}
+}
+

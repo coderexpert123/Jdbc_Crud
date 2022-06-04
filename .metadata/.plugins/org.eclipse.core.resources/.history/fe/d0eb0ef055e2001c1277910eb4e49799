@@ -1,0 +1,17 @@
+package class_and_obj;
+
+import java.util.HashMap;
+
+public class himpl {
+
+	//main method
+	public static void main(String[] args) {
+		
+		HashMap<String, Integer> hmap=new HashMap<>();	
+		
+		
+		hmap.put("India", 678);
+		System.out.println(hmap);
+	}
+	
+}

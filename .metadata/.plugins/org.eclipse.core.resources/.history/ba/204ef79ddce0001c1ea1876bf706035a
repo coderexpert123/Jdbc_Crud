@@ -1,0 +1,22 @@
+package class_and_obj;
+
+import javax.swing.plaf.multi.MultiInternalFrameUI;
+
+public class pmi {
+
+	public static int sumOfEven(int n) {
+		
+		if (n==1) {
+			return 1;
+		}
+		
+		int finalans=n+(n-1);
+		return finalans;
+		
+	}
+	// main
+		public static void main(String[] args) {
+			int n=3;
+			System.out.println(sumOfEven(n));			
+		}
+}

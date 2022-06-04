@@ -1,0 +1,9 @@
+package class_and_obj;
+
+public class Student {
+	
+	String name;
+private	int RollNumber;
+
+
+}

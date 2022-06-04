@@ -1,0 +1,10 @@
+package sms.student;
+
+public class studentdao {
+	
+	
+private static  void insertStudentTodb() {
+	// TODO Auto-generated method stub
+
+}
+}

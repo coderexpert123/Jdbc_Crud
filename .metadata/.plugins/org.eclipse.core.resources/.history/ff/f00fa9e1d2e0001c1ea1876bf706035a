@@ -1,0 +1,36 @@
+package class_and_obj;
+
+import java.util.Scanner;
+
+import javax.management.relation.Role;
+import javax.management.relation.RoleNotFoundException;
+
+import org.w3c.dom.ls.LSOutput;
+
+public class callingclass {
+
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		
+		
+		   Student s1=new Student();
+			//System.out.println(s1);	
+		   s1.name="Nishant";
+		   s1.RollNumber=121;
+		   System.out.println(s1.RollNumber);
+		   System.out.println(s1.name);
+		   
+		   	System.out.println("########################");
+		   
+		   Student s2=new Student();
+		   s2.name="Mohna";
+		   s2.RollNumber=120;
+		   System.out.println(s2.name);
+		   System.out.println(s2.RollNumber);
+		   
+		   
+		   
+	}
+
+	
+}
